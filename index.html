@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <title>Pomotask web</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <h1 id="heading-text">Pomotask</h1>
+    <div id="container-div">
+        <div class="rectangle" id="rect-input">
+            <form>
+                <label for="task">What are you going to do?</label>
+                <input type="text" id="task_input" name="task" required size="30" />
+
+                <label for="reason">Why?</label>
+                <input type="text" id="reason_input" name="reason" required size="30" />
+
+                <input type="reset" id="action-btn" value="Start pomodoro!">
+                <!-- TODO: implement form but do not submit by event.preventDefault method -->
+            </form>
+        </div>
+        <div class="rectangle" id="rect-log">
+            <!-- In this rectangle, when action button is pressed, the text will appear "Work session started!"
+            along with notification title = "Pomodoro started" and message = "Concentrate for 30 minutes!"-->
+        </div>
+    </div>
+
+</body>
+<script src="./scripts/script.js" defer></script>
+
+</html>
