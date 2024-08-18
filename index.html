@@ -19,7 +19,6 @@
                 <input type="text" id="reason_input" name="reason" required size="30" />
 
                 <input type="reset" id="action-btn" value="Start pomodoro!">
-                <!-- TODO: implement form but do not submit by event.preventDefault method -->
             </form>
         </div>
         <div class="rectangle" id="rect-log">
@@ -27,7 +26,10 @@
             along with notification title = "Pomodoro started" and message = "Concentrate for 30 minutes!"-->
         </div>
     </div>
-
+    <footer>
+        <p>Give permission to notification for alerts.</p>
+        <button type="button" id="notif-permission-btn">Enable notifications</button>
+    </footer>
 </body>
 <script src="./scripts/script.js" defer></script>
 
