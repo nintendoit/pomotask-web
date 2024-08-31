@@ -1,6 +1,7 @@
 const logRectangle = document.querySelector("#rect-log");
 const actionButton = document.querySelector("#action-btn");
 const permissionButton = document.querySelector("#notif-permission-btn");
+const permissionStatusText = document.querySelector("#permission-status-txt");
 
 const workStartContent = document.createElement("div");
 workStartContent.textContent = "Work session started!";
@@ -29,6 +30,6 @@ actionButton.onclick = () => {
 
 permissionButton.onclick = () => {
   Notification.requestPermission().then((result) => {
-    console.log("Notification permission:" + result);
+    permissionStatusText.textContent = "Notification permission:" + result;
   });
 };
